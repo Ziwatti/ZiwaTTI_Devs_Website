@@ -1,104 +1,99 @@
-body {
-    background-size: cover;
-    background-position: center;
-    background-image:url(foto.jpeg);
-    width: 100%;
-    
-    
-    color: ghostwhite !important;
-    margin: 0;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
 }
 
-html {
-    height: 100%;
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 20px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
-.container-services {
-    
-    
+.border{
+  width: 250px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 30px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#services {
-    margin:90px auto;
-    text-align: center;
-} 
-
-h1 {
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
 }
-
-h1:after {
-    content: '';
-    background: ghostwhite;
-    display: block;
-    width: 150px;
-    margin: 10px auto;
-    height: 3px;
-    background: linear-gradient(to right, #4A00E0 0%, #8E2DE2 100%); 
-}
-
-.icon {
-    font-size: 40px;
-    margin: 20px auto;
-    padding: 20px;
-    height: 80px;
-    width: 80px;
-    border: 1px solid ghostwhite;
-    border-radius: 50%;
-}
-    
-.col-md-3:hover {
-    box-shadow: 5px 7px 9px -3px ghostwhite;
-    cursor: pointer;
-}
-   
-    
-
-    
-
-
-    
-    
-
-
-
+.service-box:hover{
+  transform: scale(1.2);
+ overflow: visible;
+  font-size: 10px;
  
-   
-    
-    
-    
+}
 
 
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
 
- 
- 
-   
-   
-    
-  
-   
-    
-   
-    
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
 
-	
-    
- 
-    
-    
-	
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
 
- 
-    
-    
-    
-  
-
-    
-    
-	
-    
-       
-
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
